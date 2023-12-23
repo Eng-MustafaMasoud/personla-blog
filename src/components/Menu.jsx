@@ -1,5 +1,6 @@
 import React from "react";
 import { Cards } from "../utils/cards";
+import Image from "next/image";
 const Menu = () => {
   const date = new Date();
   const dateNow = date.toDateString();
@@ -48,7 +49,8 @@ const Menu = () => {
         <div className="flex flex-col gap-4">
           {Cards?.slice(0,4).map((card) => (
             <div key={card.id} className="flex gap-8 items-center mt-8">
-              <img
+              <Image
+              width={50} height={50}
                 src={card.image}
                 alt={card.title}
                 className="rounded-full w-[50px] h-[50px]"

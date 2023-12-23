@@ -1,13 +1,14 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mt-16 w-full ">
+    <footer className="mt-16 w-full border-t pt-4 ">
       <div className=" flex gap-32 mb-8 maxmd:flex-col maxmd:gap-16">
         <div className="flex flex-col gap-4 flex-[3]  ">
           <div className="flex items-center gap-4">
-            <img
-              className="w-[50px] h-[50px] rounded-full border-2"
+            <Image
+              width={50} height={50} className="w-[50px] h-[50px] rounded-full border-2"
               src="https://images.unsplash.com/photo-1546074177-ffdda98d214f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsb2d8ZW58MHx8MHx8fDA%3D"
               alt="read more"
             />

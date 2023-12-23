@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Featured = () => {
@@ -10,7 +11,9 @@ const Featured = () => {
       </div>
       <div className="flex gap-4 maxmd:flex-col">
         <div className="flex-1 rounded-xl w-full h-[440px]   ">
-          <img
+          <Image 
+          width={560}
+          height={440}
             src="https://images.pexels.com/photos/19560882/pexels-photo-19560882/free-photo-of-a-large-building-with-a-large-bird-flying-over-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
             alt="blog"
             className="rounded-xl h-full w-full bg-cover"
