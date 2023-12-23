@@ -8,7 +8,7 @@ const Card = ({ ...card }) => {
   return (
     <div className="flex h-full  gap-4  p-2 maxmd:flex-col">
       <div className="flex  w-full max-h-full h-[380px]">
-        <Image width={400} height={380} src={card.image} alt={card.title} className="w-full h-full bg-cover" />
+        <Image width={400} height={380} src={card.image} alt={card.title} className="w-full h-auto bg-cover" />
       </div>
       <div className="flex flex-col   justify-between px-4 gap-4">
         <div className="flex gap-4 items-center">

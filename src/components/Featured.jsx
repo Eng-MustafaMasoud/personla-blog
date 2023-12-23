@@ -10,13 +10,13 @@ const Featured = () => {
         </h1>
       </div>
       <div className="flex gap-4 maxmd:flex-col">
-        <div className="flex-1 rounded-xl w-full h-[440px]   ">
+        <div className="flex-1 rounded-xl w-full h-full   ">
           <Image 
           width={560}
-          height={440}
+          height={420}
             src="https://images.pexels.com/photos/19560882/pexels-photo-19560882/free-photo-of-a-large-building-with-a-large-bird-flying-over-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
             alt="blog"
-            className="rounded-xl h-full w-full bg-cover"
+            className="rounded-xl h-[420px] w-full bg-cover "
           />
         </div>
         <div className="flex flex-col flex-1  justify-center gap-4 ">

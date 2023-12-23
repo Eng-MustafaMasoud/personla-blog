@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
       <div className=" text-2xl maxsm:text-xl font-bold flex-1 text-center maxmd:text-start"><Link href="/">Mustafa Blog</Link></div>
       <div className="   flex-1 flex items-center justify-center maxmd:justify-end ">
-        <Links open={open}/>
+        <Links open={open} setOpen={setToggle}/>
         <div className="flex items-center gap-2 ">
 
         <Authitication />

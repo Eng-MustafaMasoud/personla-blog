@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body{
-  @apply min-h-[100vh] w-screen overflow-x-hidden
+  @apply min-h-[100vh] w-screen overflow-x-hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 .dark{
   @apply bg-dark text-light
@@ -22,6 +24,27 @@ a{
 }
 p{
   @apply capitalize
+}
+.mobNav::before{
+content:"";
+position: absolute;
+top: -100%;
+
+left: -100%;
+}
+.mobNav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 4s ease-in-out 1s;
+
+
 }
 
 .container{

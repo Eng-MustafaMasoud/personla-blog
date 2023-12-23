@@ -10,11 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Mustafa Blog",
   description: "Mustafa Blog app",
+  icons:{
+    icon:"https://images.unsplash.com/photo-1546074177-ffdda98d214f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJsb2d8ZW58MHx8MHx8fDA%3D"
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+     
       <body className={inter.className}>
         <ThemeContextProvider>
           <ThemeProvider>
